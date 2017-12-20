@@ -1,0 +1,12 @@
+.content {
+  width: calc(100% + 10px);
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding-right: 0;
+  }
+}

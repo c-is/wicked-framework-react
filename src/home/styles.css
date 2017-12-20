@@ -1,0 +1,189 @@
+@import '../../css/_variables.css';
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.logoTop {
+  position: absolute;
+  top: 56%;
+  right: 0;
+  left: 0;
+  width: 24rem;
+  margin: auto;
+  margin-top: -1.05rem;
+  transform: translateY(-50%) translateX(-66.666%);
+  z-index: 2;
+
+  img {
+    width: 100%;
+  }
+}
+
+.aboutCard {
+  width: calc(100% + 16rem);
+  margin: 8rem 0;
+  margin-bottom: 12rem;
+  margin-left: -8rem;
+  padding: 6rem 8rem;
+  background-color: #f7f7f7;
+
+  /* top: 4.250rem;
+  right: calc(5.000rem + 2.625rem); */
+
+  p {
+    margin-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-family: var(--main-font);
+  }
+
+  &__desc {
+    margin-top: 0;
+    font-size: 1.167rem;
+    font-family: var(--sub-font);
+  }
+}
+
+.secTop {
+  padding-top: 4rem;
+  padding-bottom: 4.75rem;
+}
+
+.sectionArticle {
+  padding-top: 8rem;
+  padding-bottom: calc(8rem - 4.667rem);
+}
+
+.articleTopTitle {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.articleListTitle {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  font-size: 3.666rem;
+  text-align: center;
+  line-height: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 10rem;
+    height: 1px;
+    margin: auto;
+    background-color: #000;
+  }
+}
+
+.articleImageContainer {
+  position: absolute;
+  top: 6.666rem;
+  right: 8rem;
+  width: 55%;
+  height: calc(100% - 9.999rem);
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.articleTopImage {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.catchyPhrase {
+  position: relative;
+  margin-top: 6.666rem;
+  padding: 10rem 0;
+  text-align: center;
+  background-color: #000;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 16.667rem;
+    height: 0.1rem;
+    margin: auto;
+    background-color: var(--bgColour);
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 2.333rem;
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  &__text {
+    font-size: 1.167rem;
+    font-family: var(--sub-font);
+    color: #fff;
+  }
+}
+
+.cls1 {
+  font-size: 69px;
+  letter-spacing: -0.02em;
+  fill: #000;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .secTop {
+    height: auto !important;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .logoTop {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .sectionArticle {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+
+  .aboutCard {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    margin: 5rem 0;
+    padding: 5rem 2rem;
+  }
+
+  .catchyPhrase {
+    padding: 5rem 2rem;
+
+    &__title {
+      line-height: 1.4;
+    }
+  }
+}

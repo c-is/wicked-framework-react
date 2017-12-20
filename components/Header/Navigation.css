@@ -1,0 +1,37 @@
+@import '../../css/_variables.css';
+
+.navigation {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  overflow: hidden;
+
+  &__list {
+    position: relative;
+    width: 100%;
+  }
+
+  &__item {
+    font-size: 4rem;
+  }
+
+  &__link {
+    color: var(--main-colour) !important;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
